@@ -9,9 +9,23 @@ const reader = readline.createInterface({
 
 reader.setPrompt('=> ');
 
+const matcher = require('./matcher');
 reader.prompt();
+
 reader.on('line', replay => {
-  console.log(`${replay}? Sorry, but I don't understand you...`);
-  // TODO: implement me please...
-  process.exit(0);
+  matcher(replay, data => {
+    // console.debug('reply', replay, 'data', data);
+    switch (data.intent) {
+      case 'HELLO_COMMAND':
+        console.info('привед!!! :)');
+        break;
+      case 'BYE_COMMAND':
+        console.info('пока... =(');
+        process.exit(0);
+        break;
+      default:
+        console.info(`Sorry, but I don't understand you! Exiting...`);
+        break;
+    }
+  });
 });
