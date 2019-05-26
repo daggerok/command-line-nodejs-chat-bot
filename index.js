@@ -18,6 +18,7 @@ reader.on('line', replay => {
     switch (data.intent) {
       case 'HELLO_COMMAND':
         console.info('привед!!! :)');
+        reader.prompt();
         break;
       case 'BYE_COMMAND':
         console.info('пока... =(');
@@ -25,6 +26,7 @@ reader.on('line', replay => {
         break;
       default:
         console.info(`Sorry, but I don't understand you! Exiting...`);
+        reader.prompt();
         break;
     }
   });
