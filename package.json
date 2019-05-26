@@ -1,0 +1,17 @@
+{
+  "name": "command-line-nodejs-chat-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regex": "nodemon regex/",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Maksim Kostromin <daggerok@gmail.com> (https://github.com/daggerok)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "12.0.2",
+    "nodemon": "1.19.1"
+  }
+}
