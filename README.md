@@ -22,6 +22,13 @@ asserting pattern matcher...
 found: max
 ```
 
+other samples:
+
+```
+\b\d{3}\s?\d{3}\b
+my pin is 160010. I also can di like so: 160 010
+```
+
 _links_
 
 * [regexr.com](https://regexr.com/)
