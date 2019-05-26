@@ -21,3 +21,8 @@ max
 asserting pattern matcher...
 found: max
 ```
+
+_links_
+
+* [regexr.com](https://regexr.com/)
+* [Mozilla Regular Expressions (RU)](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Regular_Expressions)
